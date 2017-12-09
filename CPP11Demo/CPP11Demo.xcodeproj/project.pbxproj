@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		FA9006DE1FDC281200DF28B6 /* future.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA9006DD1FDC281100DF28B6 /* future.cpp */; };
+		FA9006EA1FDC2ECB00DF28B6 /* sp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA9006E01FDC2E5000DF28B6 /* sp.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -20,15 +21,33 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		FA9006E51FDC2E8400DF28B6 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		FA9006D21FDC27E100DF28B6 /* CPP11Demo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CPP11Demo; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA9006D21FDC27E100DF28B6 /* futre */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = futre; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA9006DD1FDC281100DF28B6 /* future.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = future.cpp; sourceTree = "<group>"; };
+		FA9006E01FDC2E5000DF28B6 /* sp.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = sp.cpp; sourceTree = "<group>"; };
+		FA9006E91FDC2E8400DF28B6 /* smart_pointer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = smart_pointer; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		FA9006CF1FDC27E100DF28B6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA9006E41FDC2E8400DF28B6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +60,7 @@
 		FA9006C91FDC27E100DF28B6 = {
 			isa = PBXGroup;
 			children = (
+				FA9006DF1FDC2E2300DF28B6 /* smart_pointer */,
 				FA9006DC1FDC281100DF28B6 /* future */,
 				FA9006D31FDC27E100DF28B6 /* Products */,
 			);
@@ -49,7 +69,8 @@
 		FA9006D31FDC27E100DF28B6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FA9006D21FDC27E100DF28B6 /* CPP11Demo */,
+				FA9006D21FDC27E100DF28B6 /* futre */,
+				FA9006E91FDC2E8400DF28B6 /* smart_pointer */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -62,12 +83,20 @@
 			path = future;
 			sourceTree = "<group>";
 		};
+		FA9006DF1FDC2E2300DF28B6 /* smart_pointer */ = {
+			isa = PBXGroup;
+			children = (
+				FA9006E01FDC2E5000DF28B6 /* sp.cpp */,
+			);
+			path = smart_pointer;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FA9006D11FDC27E100DF28B6 /* CPP11Demo */ = {
+		FA9006D11FDC27E100DF28B6 /* futre */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FA9006D91FDC27E100DF28B6 /* Build configuration list for PBXNativeTarget "CPP11Demo" */;
+			buildConfigurationList = FA9006D91FDC27E100DF28B6 /* Build configuration list for PBXNativeTarget "futre" */;
 			buildPhases = (
 				FA9006CE1FDC27E100DF28B6 /* Sources */,
 				FA9006CF1FDC27E100DF28B6 /* Frameworks */,
@@ -77,9 +106,26 @@
 			);
 			dependencies = (
 			);
-			name = CPP11Demo;
+			name = futre;
 			productName = CPP11Demo;
-			productReference = FA9006D21FDC27E100DF28B6 /* CPP11Demo */;
+			productReference = FA9006D21FDC27E100DF28B6 /* futre */;
+			productType = "com.apple.product-type.tool";
+		};
+		FA9006E11FDC2E8400DF28B6 /* smart_pointer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA9006E61FDC2E8400DF28B6 /* Build configuration list for PBXNativeTarget "smart_pointer" */;
+			buildPhases = (
+				FA9006E21FDC2E8400DF28B6 /* Sources */,
+				FA9006E41FDC2E8400DF28B6 /* Frameworks */,
+				FA9006E51FDC2E8400DF28B6 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = smart_pointer;
+			productName = CPP11Demo;
+			productReference = FA9006E91FDC2E8400DF28B6 /* smart_pointer */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -93,6 +139,9 @@
 				TargetAttributes = {
 					FA9006D11FDC27E100DF28B6 = {
 						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					FA9006E11FDC2E8400DF28B6 = {
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -109,7 +158,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FA9006D11FDC27E100DF28B6 /* CPP11Demo */,
+				FA9006D11FDC27E100DF28B6 /* futre */,
+				FA9006E11FDC2E8400DF28B6 /* smart_pointer */,
 			);
 		};
 /* End PBXProject section */
@@ -120,6 +170,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA9006DE1FDC281200DF28B6 /* future.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA9006E21FDC2E8400DF28B6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA9006EA1FDC2ECB00DF28B6 /* sp.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,6 +303,22 @@
 			};
 			name = Release;
 		};
+		FA9006E71FDC2E8400DF28B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FA9006E81FDC2E8400DF28B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -257,11 +331,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FA9006D91FDC27E100DF28B6 /* Build configuration list for PBXNativeTarget "CPP11Demo" */ = {
+		FA9006D91FDC27E100DF28B6 /* Build configuration list for PBXNativeTarget "futre" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FA9006DA1FDC27E100DF28B6 /* Debug */,
 				FA9006DB1FDC27E100DF28B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA9006E61FDC2E8400DF28B6 /* Build configuration list for PBXNativeTarget "smart_pointer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA9006E71FDC2E8400DF28B6 /* Debug */,
+				FA9006E81FDC2E8400DF28B6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
